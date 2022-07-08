@@ -1,32 +1,26 @@
-# Prerequisites
-*.d
+#include <iostream>
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+using namespace std;
 
-# Precompiled Headers
-*.gch
-*.pch
+int main () {
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+float profEsp, altPis, resultado;
 
-# Fortran module files
-*.mod
-*.smod
+        cout << "Bem vindo ao calculador de escadas!" << endl;
+        cout << "Insira o espelho (altura do degrau): ";
+        cin >> altPis; 
+        cout << "Agora insira o piso (profundidade do degrau): ";
+        cin >> profEsp;
+        
+    resultado = 2*altPis + profEsp;
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
 
-# Executables
-*.exe
-*.out
-*.app
+    if (63 <= resultado) {
+    if (64 >= resultado)    
+        cout << resultado << endl << "Muito bem! A escada pode ser executada!";
+    }
+    else  {
+        cout << resultado << endl << "A escada nao deve ser executada!" << endl;
+    }
+    return 0;
+}
